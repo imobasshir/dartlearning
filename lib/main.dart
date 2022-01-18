@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-String getName(String fName, String lName) {
-  // return fName + ' ' + lName;
-  return '$fName $lName';
+void test() {
+  // final name = 'Fooo';
+  // if (name == 'Foo') {
+  //   print('Yes, this is Foo');
+  // } else {
+  //   print('No, this is\'t not Foo');
+  // }
+  final name = 'Foo Bar Wo';
+  final name100 = name * 100;
+  print(name100);
 }
 
 void main() {
@@ -15,7 +22,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(getName('Foo', 'bar'));
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
