@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
 void test() {
-  // final name = 'Fooo';
-  // if (name == 'Foo') {
-  //   print('Yes, this is Foo');
-  // } else {
-  //   print('No, this is\'t not Foo');
-  // }
-  final name = 'Foo Bar Wo';
-  final name100 = name * 100;
-  print(name100);
+  var name = ['Foo', 'Bar', 'Baz'];
+  print(name.length);
+  print(name);
+  name.add('MyName');
+  print(name);
+  print(name.length);
+  var name1 = ['abcd', ...name];
+  print(name1);
 }
 
 void main() {
