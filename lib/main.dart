@@ -4,12 +4,35 @@ void main() {
   runApp(const MyApp());
 }
 
+enum AnimalType { cat, dog, other }
+
+void test(AnimalType animalType) {
+  // if (animalType == AnimalType.cat) {
+  //   print('Oh i don\'t love cat');
+  // } else if (animalType == AnimalType.dog) {
+  //   print('I dont like it');
+  // } else {
+  //   print('Nothing');
+  // }
+  switch (animalType) {
+    case AnimalType.cat:
+      print('Oh i don\'t love them');
+      break;
+    case AnimalType.dog:
+      print('Oh i dont love them');
+      break;
+    default:
+      print('Nothing');
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test(AnimalType.other);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
