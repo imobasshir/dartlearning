@@ -7,14 +7,17 @@ void main() {
 class Cat {
   final String name;
   Cat(this.name);
-  factory Cat.fatBull() {
-    return Cat('FluffBull');
+}
+
+extension Run on Cat {
+  void run() {
+    print('Cat $name is running.');
   }
 }
 
 void test() {
-  final fatBull = Cat.fatBull();
-  print(fatBull.name);
+  final fluf = Cat('Fluffers');
+  fluf.run();
 }
 
 class MyApp extends StatelessWidget {
