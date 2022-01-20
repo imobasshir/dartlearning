@@ -5,19 +5,14 @@ void main() {
 }
 
 class Person {
-  void run() {
-    print('Running');
-  }
+  final String name;
 
-  void breathe() {
-    print('Breathing');
-  }
+  Person(this.name);
 }
 
 void test() {
-  final person = Person();
-  person.run();
-  person.breathe();
+  final foo = Person('Foo Bar');
+  print(foo.name);
 }
 
 class MyApp extends StatelessWidget {
