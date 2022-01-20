@@ -4,21 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-class Cat {
-  final String name;
-  Cat(this.name);
-}
-
-extension Run on Cat {
-  void run() {
-    print('Cat $name is running.');
-  }
-}
-
-void test() {
-  final fluf = Cat('Fluffers');
-  fluf.run();
-}
+void test() {}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
